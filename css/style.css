@@ -121,7 +121,12 @@ a{
     border-radius: 10px;
 }
 
-
+.sectionThreeBoxBack a{
+    text-decoration: none;
+}
+.sectionThreeBoxFront a{
+    text-decoration: none;
+}
 .week{
     display: grid;
     grid-template-columns: 1fr 1fr;
