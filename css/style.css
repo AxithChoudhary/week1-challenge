@@ -75,8 +75,6 @@ a{
 
 .sectionTwo{
     background: #FFFFFF;
-/* drop-shadow/.15 */
-
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
     margin: 0 2em;
     display: grid;
@@ -98,12 +96,13 @@ a{
 }
 .sectionThreeBoxs{
     display:grid;
+    margin: 1.5em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 .sectionThreeBoxFront{
-    margin: 2em;
-    padding: 2em;
+    margin: 2em 3em;
+    padding: 5em 4em;
     color: #F0F1F2;
     background: linear-gradient(97.66deg, #2F80ED 0.94%, rgba(123, 174, 244, 0.635417) 73.96%, rgba(150, 191, 246, 0.504346) 83.82%, rgba(255, 255, 255, 0) 121.8%), #56CCF2;
     /* drop-shadow/.15 */
@@ -111,8 +110,8 @@ a{
     border-radius: 10px;
 }
 .sectionThreeBoxBack{
-    margin: 2em;
-    padding: 2em;
+    margin: 2em 3em;
+    padding: 5em 4em;
     color: #F0F1F2;
     background: linear-gradient(296.48deg, #87E8DE -14.41%, rgba(181, 241, 235, 0.613161) 25.24%, rgba(255, 255, 255, 0) 100%), #13C2C2;
 /* drop-shadow/.15 */
@@ -131,7 +130,42 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
+.duration{
+    font-weight: 600;
+    font-size: 16px;
+}
+@media (max-width:1350){
+    .image{
+        padding-left: 5em;
+    }
+}
+@media (max-width:1150){
+    .image{
+        margin-left: 0.75rem;
+    }
+    .sectionThreeBoxFront{
+        margin: 2em 3em;
+        padding: 5em 2em;
+    }
+    .sectionThreeBoxBack{
+        margin: 2em 3em;
+        padding: 5em 2em;
+    }
+}
+@media (max-width:1050){
+    .image{
+        padding-left: 0;
+        margin-left: 0.2rem;
+    }
+    .sectionThreeBoxFront{
+        margin: 2em 3em;
+        padding: 5em 2em;
+    }
+    .sectionThreeBoxBack{
+        margin: 2em 3em;
+        padding: 5em 2em;
+    }
+}
 @media (max-width: 900px){
     .navbarItem{
         display: inline-block;
@@ -146,9 +180,13 @@ a{
         margin: 0 auto;
         width: auto;
     }
+    
     .sectionTwoContent{
         padding: 1em;
         display: inline-block;
+    }
+    .sectionThreeBoxs{
+        margin: 0 1em;
     }
     .sectionThreeBoxFront{
         margin: 2em 1em;
@@ -159,7 +197,7 @@ a{
         padding: 1em;
     }
 }
-@media (max-width: 760px){
+@media (max-width: 800px){
     .menu{
         display: block;
         margin-right: 40px;
@@ -175,6 +213,10 @@ a{
         display: block;
     }
 
+}
+@media (max-width: 760px){
+    
+
     
     
     .containerTwo{
@@ -187,6 +229,9 @@ a{
         grid-template-columns: 1fr;
         text-align: center;
         
+    }
+    .sectionThreeBoxs{
+        margin: 0;
     }
     .sectionThreeBoxFront{
         margin: 2em 1em;
@@ -217,8 +262,17 @@ a{
     }
     .sectionThreeBoxs{
         display:grid;
+        margin: 0 3em;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+    .sectionThreeBoxFront{
+        margin: 2em 1em;
+        padding: 4em 2em;
+    }
+    .sectionThreeBoxBack{
+        margin: 2em 1em;
+        padding: 4em 2em;
     }
 }
 @media (max-width: 450px){
@@ -245,5 +299,8 @@ a{
         margin-top: 2em;
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .sectionThreeBoxs{
+        margin: 0 2em;
     }
 }
